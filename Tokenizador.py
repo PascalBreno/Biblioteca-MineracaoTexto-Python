@@ -33,11 +33,3 @@ def separador (texto, adicionada = False, simbolos = ['.', "!", "?", ","]):
 	
 	return tokensFinal
 
-
-
-
-
-FinaldosToken = separador("Mas amada, o que está acontecendo??? Voce parece triste. Se cuida!")
-
-
-print(FinaldosToken)
