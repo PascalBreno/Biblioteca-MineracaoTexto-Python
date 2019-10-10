@@ -5,13 +5,9 @@ def separador (texto, simbolos = ['.', "!", "?", ","]):
 	adicionada = False
 	tokensFinal = []
 	tokens = texto.split(' ')
-	print(tokens)
 	for token in tokens:
-		print(token)
-		
 		for simbolo in simbolos:
 			subTokens = token.split(simbolo)
-			print(subTokens)
 			if(len(subTokens) > 1):
 				if(not adicionada):				
 					tokensFinal.append(subTokens[0])
@@ -34,11 +30,3 @@ def separador (texto, simbolos = ['.', "!", "?", ","]):
 	
 	return tokensFinal
 
-
-
-
-
-FinaldosToken = separador("Mas amada, o que está acontecendo??? Voce parece triste. Se cuida!")
-
-
-print(FinaldosToken)
