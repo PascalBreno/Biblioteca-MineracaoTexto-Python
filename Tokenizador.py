@@ -1,7 +1,8 @@
 
 #Adaptado por Victor Félix Arinos... rs
 
-def separador (texto, adicionada = False, simbolos = ['.', "!", "?", ","]):
+def separador (texto, simbolos = ['.', "!", "?", ","]):
+	adicionada = False
 	tokensFinal = []
 	tokens = texto.split(' ')
 	print(tokens)
