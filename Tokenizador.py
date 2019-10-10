@@ -1,16 +1,13 @@
 
 #Adaptado por Victor Félix Arinos... rs
 
-def separador (texto, adicionada = False, simbolos = ['.', "!", "?", ","]):
+def separador (texto, simbolos = ['.', "!", "?", ","]):
+	adicionada = False
 	tokensFinal = []
 	tokens = texto.split(' ')
-	print(tokens)
 	for token in tokens:
-		print(token)
-		
 		for simbolo in simbolos:
 			subTokens = token.split(simbolo)
-			print(subTokens)
 			if(len(subTokens) > 1):
 				if(not adicionada):				
 					tokensFinal.append(subTokens[0])
